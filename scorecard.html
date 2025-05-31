@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Scorekeeper - Scorecard</title>
+    <link rel="stylesheet" href="scorecard.css">
+</head>
+<body>
+    <div id="scorecardPage" class="scorecard-container">
+        <div class="navigation">
+            <button id="backToLive">Back to Live</button>
+        </div>
+        
+        <h1>Match Scorecard</h1>
+        
+        <h2>Batting</h2>
+        <div class="batting-scorecard">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Batter</th>
+                        <th>Runs</th>
+                        <th>Balls</th>
+                        <th>4s</th>
+                        <th>6s</th>
+                        <th>SR</th>
+                    </tr>
+                </thead>
+                <tbody id="battingScorecardBody">
+                    <!-- Filled by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        
+        <h2>Bowling</h2>
+        <div class="bowling-scorecard">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bowler</th>
+                        <th>Overs</th>
+                        <th>Maidens</th>
+                        <th>Runs</th>
+                        <th>Wickets</th>
+                        <th>Economy</th>
+                    </tr>
+                </thead>
+                <tbody id="bowlingScorecardBody">
+                    <!-- Filled by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="score.js"></script>
+</body>
+</html>

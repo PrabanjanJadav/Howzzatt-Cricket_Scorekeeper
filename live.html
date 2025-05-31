@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Scorekeeper - Live</title>
+    <link rel="stylesheet" href="live.css">
+</head>
+<body>
+    <div id="livePage" class="match-header">
+        <h1 id="matchSummary">Live Match</h1>
+        
+        <div class="match-info">
+            <div id="rrr" class="rrr"></div>
+        </div>
+        
+        <div class="batsmen-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Batter</th>
+                        <th>Runs</th>
+                        <th>Balls</th>
+                        <th>4s</th>
+                        <th>6s</th>
+                        <th>SR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="strikerRow">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="nonStrikerRow">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="bowler-info" id="bowlerInfo">
+            <h3>Current Bowler</h3>
+            <div class="bowler-stats">
+                <div><span class="label">Name:</span> <span class="bowler-name"></span></div>
+                <div><span class="label">Overs:</span> <span class="overs"></span></div>
+                <div><span class="label">Maidens:</span> <span class="maidens"></span></div>
+                <div><span class="label">Runs:</span> <span class="runs"></span></div>
+                <div><span class="label">Wickets:</span> <span class="wickets"></span></div>
+                <div><span class="label">Economy:</span> <span class="economy"></span></div>
+            </div>
+        </div>
+        
+        <div class="scoring-buttons">
+            <button id="runs0">0</button>
+            <button id="runs1">1</button>
+            <button id="runs2">2</button>
+            <button id="runs3">3</button>
+            <button id="runs4">4</button>
+            <button id="runs6">6</button>
+            <button id="wide">Wide</button>
+            <button id="noball">No-Ball</button>
+            <button id="bye">Bye</button>
+            <button id="legbye">Leg-bie</button>
+            <button id="wicket">Wicket</button>
+        </div>
+        
+        <div class="navigation">
+            <button id="goToScorecard">Scorecard</button>
+        </div>
+    </div>
+    <script src="score.js"></script>
+</body>
+</html>
